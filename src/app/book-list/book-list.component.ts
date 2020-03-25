@@ -13,4 +13,12 @@ export class BookListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  deleteBook(id){
+      for(let i=0; i<this.books.length; i++){
+        if(this.books[i].id == id){
+            this.books.splice(i,1);
+        }
+      }
+  }
+
 }

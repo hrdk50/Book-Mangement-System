@@ -1,0 +1,38 @@
+<!-- <p>book-edit works!</p> -->
+<div class="container">
+    <form [formGroup]="editBookFormGroup" style="margin-top: 30px;">
+        <div><h2>Add Book Here</h2></div><br>
+        <div>
+            <label>Book Id</label>
+            <input type="number" class="form-control col-md-5" formControlName = "id">
+        </div>
+        <div>
+            <label>Genre</label>
+            <input type="text" class="form-control col-md-5" formControlName = "genre">
+        </div>
+        <div>
+            <label>Author Name</label>
+            <input type="text" class="form-control col-md-5" formControlName = "author">
+        </div>
+        <div>
+            <label>Book Name</label>
+            <input type="text" class="form-control col-md-5" formControlName = "title">            
+        </div>
+        <div>
+            <label>Price</label>     
+            <input type="text" class="form-control col-md-5" formControlName = "price">       
+        </div>
+        <div>
+            <label>Publisher</label>
+            <input type="text" class="form-control col-md-5" formControlName = "publisher">            
+        </div>
+        <div>
+            <label>Quantity</label>
+            <input type="number" class="form-control col-md-5" formControlName = "quantity">            
+        </div><br>
+        <div>
+            <button class="btn-primary btn-lg" (click)="onEdit()">Edit</button>
+        </div>
+    </form>
+</div>
+

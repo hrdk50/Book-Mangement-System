@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BookAddComponent } from './book-add/book-add.component';
 import { from } from 'rxjs';
 import { BookListComponent } from './book-list/book-list.component';
+import { BookEditComponent } from './book-edit/book-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookAddComponent,
-    BookListComponent
+    BookListComponent,
+    BookEditComponent
   ],
   imports: [
     BrowserModule,

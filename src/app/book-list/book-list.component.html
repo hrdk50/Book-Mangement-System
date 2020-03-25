@@ -19,6 +19,7 @@
             <th scope="col" style="min-width:110px;">price</th>
             <th scope="col" style="min-width:110px;">publisher</th>
             <th scope="col" style="min-width:110px;">Quantity</th>
+            <th scope="col" style="min-width:110px;"></th>
           </tr>
         </thead>
         <tbody>
@@ -31,6 +32,8 @@
             <td>{{book.publisher}}</td>
             <td>{{book.quantity}}</td>
             <td class="text-right">
+              <a href="" [routerLink]="['/editbook', book.id]" class="mx-2" title="Edit">Edit</a>|
+                <button (click)="deleteBook(book.id)" class="mx-2 text-danger delete_record"  title="Delete">Delete</button></td>
           </tr>
         </tbody>
       </table>
