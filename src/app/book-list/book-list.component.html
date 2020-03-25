@@ -1,0 +1,41 @@
+<div style="text-align: center; font-size: 50px;">
+<p>Book List</p>
+</div>
+    <div>
+        <table class="table table-hover">
+            <thead class="thead-dark">
+            <!-- <tr class="user_filter">
+                <td><input type="search" placeholder="First Name" class="form-control"/></td>
+                <td><input type="search" placeholder="Last Name" class="form-control"/></td>
+                <td><input type="search" placeholder="Email Address" class="form-control"/></td>
+                <td></td>
+                <td></td>
+            </tr> -->
+          <tr>
+            <th scope="col" style="min-width:120px;">Id</th>
+            <th scope="col" style="min-width:120px;">genre</th>
+            <th scope="col" style="min-width:180px;">author</th>
+            <th scope="col" style="min-width:110px;">title</th>
+            <th scope="col" style="min-width:110px;">price</th>
+            <th scope="col" style="min-width:110px;">publisher</th>
+            <th scope="col" style="min-width:110px;">Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let book of books">
+            <td>{{book.id}}</td>
+            <td>{{book.genre}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.title}}</td>
+            <td>{{book.price}}</td>
+            <td>{{book.publisher}}</td>
+            <td>{{book.quantity}}</td>
+            <td class="text-right">
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div style="text-align: center;margin-top: 50px;">
+    <button class="btn btn-primary" routerLink="/addbook">Add Book</button>
+</div>
